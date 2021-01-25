@@ -34,7 +34,6 @@ while True:
   # Wait for page to load
   time.sleep(30)
 
-
   # Find disabled January 30 elements
   results = driver.execute_script("""
     return Array.prototype.slice.call(
