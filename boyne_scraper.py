@@ -1,10 +1,6 @@
-import urllib.request
-from bs4 import BeautifulSoup
 from selenium import webdriver
 import time
-import pandas as pd
 from chromedriver_py import binary_path
-import time
 import smtplib
 from datetime import datetime
 
@@ -38,6 +34,7 @@ while True:
   # Wait for page to load
   time.sleep(30)
 
+
   # Find disabled January 30 elements
   results = driver.execute_script("""
     return Array.prototype.slice.call(
@@ -56,3 +53,4 @@ while True:
 
   # 14.5 minutes
   time.sleep(870)
+
