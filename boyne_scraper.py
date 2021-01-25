@@ -38,7 +38,7 @@ while True:
   results = driver.execute_script("""
     return Array.prototype.slice.call(
       document.querySelectorAll('.-disabled-[data-date="30"][data-month="0"]')
-    ).filter(function(x) { return true; });
+    );
   """)
 
   print("\n" + datetime.now().strftime("%m/%d/%Y %H:%M:%S"))
